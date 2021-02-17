@@ -1,0 +1,28 @@
+{
+  "name": "@parcel/webworkers-fail",
+  "version": "2.0.0-beta.1",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "demo": "PARCEL_WORKERS=0 parcel src/index.js",
+    "clean-demo": "rm -rf .parcel-cache dist && yarn demo"
+  },
+  "devDependencies": {
+    "@parcel/babel-register": "2.0.0-beta.1",
+    "@parcel/core": "2.0.0-beta.1"
+  },
+  "targets": {
+    "browser": {
+      "engines": {
+        "browsers": [
+          "last 1 Chrome version"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
